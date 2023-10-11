@@ -5,8 +5,10 @@ public class Phone {
     private String model = "Samsung";
     private String name = "Diane";
     private int weight = 166;
+
     public Phone() {
     }
+
     public Phone(String model, int weight, String name, String number) {
         this.model = model;
         this.weight = weight;
@@ -29,6 +31,7 @@ public class Phone {
     public int getWeight() {
         return weight;
     }
+
     public String receiveCall() {
         return name;
     }

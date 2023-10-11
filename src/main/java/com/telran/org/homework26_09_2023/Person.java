@@ -28,10 +28,10 @@ public class Person {
     }
 
     public void move() {
-        System.out.println(age + "-years old " + name + " "+ fullName +" is coming!");
+        System.out.println(age + "-years old " + name + " " + fullName + " is coming!");
     }
 
     public void talk() {
-        System.out.println("Attention! " + name + " " + fullName +" is speaking.");
+        System.out.println("Attention! " + name + " " + fullName + " is speaking.");
     }
 }

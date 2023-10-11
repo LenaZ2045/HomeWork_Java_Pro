@@ -19,9 +19,9 @@ public class Main {
         System.out.println();
         Phone phone = new Phone(); // 1ый экземпляр класса
         System.out.println("1st Model: " + phone.getModel() + ", weight: " + phone.getWeight() + ", owner is " + phone.getName() + ", ✆ # " + phone.getNumber());
-        Phone phone1 = new Phone("iPhone", 240, "Eugene","(503) 235-6451"); // 2ой экземпляр класса
+        Phone phone1 = new Phone("iPhone", 240, "Eugene", "(503) 235-6451"); // 2ой экземпляр класса
         System.out.println("2nd Model: " + phone1.getModel() + ", weight: " + phone1.getWeight() + ", owner is " + phone1.getName() + ", ✆ # " + phone1.getNumber());
-        Phone phone2 = new Phone("Motorola", 137, "Silva","(971) 408-9237"); // 3ий экземпляр класса
+        Phone phone2 = new Phone("Motorola", 137, "Silva", "(971) 408-9237"); // 3ий экземпляр класса
         System.out.println("3rd Model: " + phone2.getModel() + ", weight: " + phone2.getWeight() + ", owner is " + phone2.getName() + ", ✆ # " + phone2.getNumber());
 
         System.out.println("Вам звонит: " + phone.receiveCall() + " -по ✆ " + phone.getNumber());
