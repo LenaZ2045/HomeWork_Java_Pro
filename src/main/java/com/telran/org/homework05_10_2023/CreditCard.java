@@ -1,30 +1,26 @@
 package com.telran.org.homework05_10_2023;
 
-import java.util.Scanner;
-
-public class CreditCard extends ATM{
+public class CreditCard extends ATM implements EURConverter, CADConverter, USDConverter {
     private String name = "CreditCard";
 
-    private String creditCardNumber = "12345678901122334455";
-    private String creditCardPin = "8643";
-    private int creditCardBalance = 7000;
-    String currency = String.valueOf(Currency.EUR);
+    private String creditCardNumber = "1234567890112233";
 
-    public CreditCard(String creditCard) {
-        super();
+    private String creditCardPin = "8643";
+
+    private int creditCardBalance = 7000;
+
+//    String currency = String.valueOf(Currency.EUR);
+
+    public CreditCard(String name, String currency) {
     }
-    public void proveCreditCardNumber() {
-        String scanner1 = String.valueOf(new Scanner(System.in));
+
+    public boolean proveCreditCardNumber() {
         System.out.println("enter credit card number ");
-        if (scanner1 == creditCardNumber) {
-            System.out.println("enter credit card pin ");
-            scanner.next();
-            if (scanner.next() == creditCardPin) {
-                System.out.println("credit card balance " + creditCardBalance);
-            } else {
-                System.out.println("wrong pin, try again ");
-            }
-        }
+        scanner.next(creditCardNumber);
+        System.out.println("enter credit card pin ");
+        scanner.next(creditCardPin);
+        System.out.println("you are authorized at " + name);
+        return true;
     }
 
     public CreditCard() {
@@ -33,16 +29,21 @@ public class CreditCard extends ATM{
 
     @Override
     public void depositBalanceUSD() {
-        System.out.println("Balance at " + name + " = " + creditCardBalance + " " + currency);
         super.depositBalanceUSD();
         System.out.println("balance after deposit " + (creditCardBalance + deposit));
     }
 
     @Override
-    public void withdrawBalanceUSD() {
-        System.out.println(name + " available balance " + (creditCardBalance + deposit) + " " + currency);
+    public double withdrawBalanceUSD() {
         super.withdrawBalanceUSD();
         System.out.println("balance after withdrawal " + (creditCardBalance + deposit - withdraw));
 
+        return 0;
+    }
+
+    @Override
+    public boolean convertEUR() {
+        System.out.println("YES exchange EUR at " + name);
+        return EURConverter.super.convertEUR();
     }
 }

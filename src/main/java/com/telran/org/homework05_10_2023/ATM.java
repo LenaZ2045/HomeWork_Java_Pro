@@ -3,29 +3,30 @@ package com.telran.org.homework05_10_2023;
 import java.util.Scanner;
 
 public abstract class ATM {
+
     static Scanner scanner = new Scanner(System.in);
 
+    int deposit;
 
-    public static boolean currencyUSD = true;
-    public static boolean currencyEUR = false;
-
-    double deposit;
-    double withdraw;
-
+    int withdraw;
 
     public ATM() {
-
     }
 
     public void depositBalanceUSD() {
+        CreditCard creditCard = new CreditCard();
+        creditCard.proveCreditCardNumber();
         System.out.println("enter deposit amount ");
-        deposit = scanner.nextDouble();
+        deposit = (int) scanner.nextDouble();
         System.out.println("your deposit is " + deposit);
     }
 
-    public void withdrawBalanceUSD() {
+    public double withdrawBalanceUSD() {
+        CreditCard creditCard = new CreditCard();
+        creditCard.proveCreditCardNumber();
         System.out.println("enter withdraw amount ");
-        withdraw = scanner.nextDouble();
+        withdraw = (int) scanner.nextDouble();
         System.out.println("your withdrawal is " + withdraw);
+        return 0;
     }
 }
