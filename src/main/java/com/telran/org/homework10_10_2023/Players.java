@@ -1,4 +1,4 @@
-package com.telran.org.homework05_10_2023;
+package com.telran.org.homework10_10_2023;
 
 import com.telran.org.homework10_10_2023.*;
 
