@@ -7,20 +7,19 @@ public class SmartPhone extends Phone {
         this.ownNumber = ownNumber;
     }
 
-    public String getOwnNumber() {
-        setOwnNumber("(333) 333-3333");
-        return ownNumber;
+    @Override
+    public void call(String numberCall) {
+        //First part phrase in this class
+        System.out.println("The phone " + getPhoneName() + " " + ownNumber);
+        //Call second part phrase from parent class
+        super.call(numberCall);
     }
 
     @Override
-    public void call() {
-        System.out.println("The phone " + getPhoneName3() + " " + getOwnNumber());
-        super.call();
-    }
-
-    @Override
-    public void receiveCall() {
-        System.out.println("The phone " + getPhoneName3() + " " + getOwnNumber());
-        super.receiveCall();
+    public void receiveCall(String numberReceiveCall) {
+        //First part phrase in this class
+        System.out.println("The phone " + getPhoneName() + " " + ownNumber);
+        //Call second part phrase from parent class
+        super.receiveCall(numberReceiveCall);
     }
 }

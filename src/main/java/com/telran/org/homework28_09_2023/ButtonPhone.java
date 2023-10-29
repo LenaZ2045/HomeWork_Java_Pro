@@ -4,24 +4,23 @@ public class ButtonPhone extends Phone {
 
     private String ownNumber;
 
-    public String getOwnNumber() {
-        setOwnNumber("(111) 111-1111");
-        return ownNumber;
-    }
-
     public void setOwnNumber(String ownNumber) {
         this.ownNumber = ownNumber;
     }
 
     @Override
-    public void call() {
-        System.out.println("The phone " + getPhoneName() + " " + getOwnNumber());
-        super.call();
+    public void call(String numberCall) {
+        //First part phrase in this class
+        System.out.println("The phone " + getPhoneName() + " " + ownNumber);
+        //Call second part phrase from parent class
+        super.call(numberCall);
     }
 
     @Override
-    public void receiveCall() {
-        System.out.println("The phone " + getPhoneName() + " " + getOwnNumber());
-        super.receiveCall();
+    public void receiveCall(String numberReceiveCall) {
+        //First part phrase in this class
+        System.out.println("The phone " + getPhoneName() + " " + ownNumber);
+        //Call second part phrase from parent class
+        super.receiveCall(numberReceiveCall);
     }
 }
