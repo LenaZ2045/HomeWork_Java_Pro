@@ -1,4 +1,4 @@
-package com.telran.org.homwork29_09_2023A;
+package com.telran.org.homework29_09_2023A;
 
 public class Main {
     public static void main(String[] args) {
