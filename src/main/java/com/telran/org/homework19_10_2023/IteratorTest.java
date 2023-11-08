@@ -3,7 +3,7 @@ package com.telran.org.homework19_10_2023;
 import java.util.*;
 
 public class IteratorTest { // Please let me know: I did not see that 10,000,000 m was applied to each situation, or it did???
-    public static  void main(String[] args) {
+    public static void main(String[] args) {
         List<CustomIterator> customIterator = new ArrayList<>(10000000);
         long start = System.currentTimeMillis();
         for (int i = 0; i < 10000000; i++) {
