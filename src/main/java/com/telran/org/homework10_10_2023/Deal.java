@@ -7,10 +7,9 @@ import static com.telran.org.homework10_10_2023.Deck.*;
 public class Deal {
     public static void main(String[] args) {
 
-        final int cardsForPlayer = 5;
-        int players;
-
         final Scanner sc = new Scanner(System.in);
+        final int cardsForPlayer = 5;
+        int players = 0;
 
 
         while (true) {
@@ -21,7 +20,6 @@ public class Deal {
                 if (cardsForPlayer * players <= numberOfCards) { // game is beginning and shuffle will be next
                     for (int i = 0; i < players * cardsForPlayer; i++) {
                         System.out.println(deck[i]);
-
                         if (i % cardsForPlayer == cardsForPlayer - 1)
                             System.out.println();
                     }
@@ -37,7 +35,7 @@ public class Deal {
                     System.out.println("Too many players!");
                 }
             }
-        } else {
+        } if (false){
             System.out.println("You have not entered a number, or your number is too large!");
         }
 //            add card distribution for ("n"-players * 5-cards) from random shuffled deck
