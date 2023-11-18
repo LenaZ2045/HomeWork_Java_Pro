@@ -1,55 +1,24 @@
 package com.telran.org.homework31_10_2023;
 
-public class Book extends BookShelf implements Author, Publisher {
-    private String bookName;
-    private String bookAuthorName = Author.authorName;
-    private String bookAuthorSurname = Author.authorSurname;
-    private String bookPublishingHouse = Publisher.publisherName;
-    private int publisherFoundationYear = Publisher.publisherFoundationYear;
-    private int authorBookAge = Author.bookAge;
+public class Book extends BookShelf {
+    private StringBuilder bookName;
+    private StringBuilder bookAuthorName;
+    private StringBuilder bookAuthorSurname;
+    private StringBuilder bookPublishingHouse;
+    private int publisherFoundationYear;
+    private int authorBookAge;
     private int bookPagesQuantity;
     private int bookPublishingYear;
 
-    public Book(String bookName, String bookAuthorName, String bookAuthorSurname, String bookPublishingHouse, int authorBookAge, int bookPagesQuantity, int bookPublishingYear) {
-        this.bookName = bookName;
-        this.bookAuthorName = bookAuthorName;
-        this.bookAuthorSurname = bookAuthorSurname;
-        this.bookPublishingHouse = bookPublishingHouse;
+    public Book(String bookName, String bookAuthorName, String bookAuthorSurname, String bookPublishingHouse, int publisherFoundationYear, int authorBookAge, int bookPagesQuantity, int bookPublishingYear) {
+        this.bookName = new StringBuilder(bookName);
+        this.bookAuthorName = new StringBuilder(bookAuthorName);
+        this.bookAuthorSurname = new StringBuilder(bookAuthorSurname);
+        this.bookPublishingHouse = new StringBuilder(bookPublishingHouse);
+        this.publisherFoundationYear = publisherFoundationYear;
         this.authorBookAge = authorBookAge;
         this.bookPagesQuantity = bookPagesQuantity;
         this.bookPublishingYear = bookPublishingYear;
-    }
-
-    public String getBookName() {
-        return bookName;
-    }
-
-    public String getBookAuthorName() {
-        return bookAuthorName;
-    }
-
-    public String getBookAuthorSurname() {
-        return bookAuthorSurname;
-    }
-
-    public String getBookPublishingHouse() {
-        return bookPublishingHouse;
-    }
-
-    public int getPublisherFoundationYear() {
-        return publisherFoundationYear;
-    }
-
-    public int getBookAuthorAge() {
-        return authorBookAge;
-    }
-
-    public int getBookPagesQuantity() {
-        return bookPagesQuantity;
-    }
-
-    public int getBookPublishingYear() {
-        return bookPublishingYear;
     }
 
     @Override
