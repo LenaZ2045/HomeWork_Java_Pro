@@ -23,15 +23,6 @@ public class Book extends BookShelf {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "bookName='" + bookName + '\'' +
-                ", bookAuthorName='" + bookAuthorName + '\'' +
-                ", bookAuthorSurname='" + bookAuthorSurname + '\'' +
-                ", bookPublishingHouse='" + bookPublishingHouse + '\'' +
-                ", publisherFoundationYear=" + publisherFoundationYear +
-                ", authorBookAge=" + authorBookAge +
-                ", bookPagesQuantity=" + bookPagesQuantity +
-                ", bookPublishingYear=" + bookPublishingYear +
-                '}';
+        return "Book{" + "bookName='" + bookName + '\'' + ", bookAuthorName='" + bookAuthorName + '\'' + ", bookAuthorSurname='" + bookAuthorSurname + '\'' + ", bookPublishingHouse='" + bookPublishingHouse + '\'' + ", publisherFoundationYear=" + publisherFoundationYear + ", authorBookAge=" + authorBookAge + ", bookPagesQuantity=" + bookPagesQuantity + ", bookPublishingYear=" + bookPublishingYear + '}';
     }
 }

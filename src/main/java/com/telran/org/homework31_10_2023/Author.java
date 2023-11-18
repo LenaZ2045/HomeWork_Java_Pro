@@ -15,20 +15,8 @@ public class Author {
         return authorName;
     }
 
-    public String getAuthorSurname() {
-        return authorSurname;
-    }
-
-    public int getBookAge() {
-        return bookAge;
-    }
-
     @Override
     public String toString() {
-        return "Author{" +
-                "authorName='" + authorName + '\'' +
-                ", authorSurname='" + authorSurname + '\'' +
-                ", bookAge=" + bookAge +
-                '}';
+        return "Author{" + "authorName='" + authorName + '\'' + ", authorSurname='" + authorSurname + '\'' + ", bookAge=" + bookAge + '}';
     }
 }

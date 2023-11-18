@@ -16,9 +16,6 @@ public class Publisher {
 
     @Override
     public String toString() {
-        return "Publisher{" +
-                "publisherName=" + publisherName +
-                ", publisherFoundationYear=" + publisherFoundationYear +
-                '}';
+        return "Publisher{" + "publisherName=" + publisherName + ", publisherFoundationYear=" + publisherFoundationYear + '}';
     }
 }

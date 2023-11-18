@@ -47,12 +47,12 @@ public class BookSortApp {
         }
 
         Publisher bookA = new Publisher("No Greater Joy Ministries", 1994);
-        Publisher bookB = new Publisher("NorthField",1896);
+        Publisher bookB = new Publisher("NorthField", 1896);
         Publisher bookC = new Publisher("Vintage", 1954);
-        Publisher bookD = new Publisher("CharismaHouse",1975);
-        Publisher bookE = new Publisher("JoyShop Ministries",2006);
+        Publisher bookD = new Publisher("CharismaHouse", 1975);
+        Publisher bookE = new Publisher("JoyShop Ministries", 2006);
         Publisher bookF = new Publisher("On Kindle Scribe", 2007);
-        Publisher bookG = new Publisher("Windblown Media",2007);
+        Publisher bookG = new Publisher("Windblown Media", 2007);
         List<Publisher> bookList1 = Arrays.asList(bookA, bookB, bookC, bookD, bookE, bookF, bookG);
         scanner.next();
         System.out.println("To sort book by publishing year enter '2' ");
