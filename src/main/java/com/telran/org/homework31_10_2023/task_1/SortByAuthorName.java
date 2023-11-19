@@ -1,4 +1,6 @@
-package com.telran.org.homework31_10_2023;
+package com.telran.org.homework31_10_2023.task_1;
+
+import com.telran.org.homework31_10_2023.task_1.Author;
 
 import java.util.Comparator;
 
