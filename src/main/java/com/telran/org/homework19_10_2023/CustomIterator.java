@@ -5,6 +5,9 @@ import java.util.Iterator;
 public class CustomIterator implements Iterator {
 
     private int[] integers;
+    private int position;
+
+    private int currentPosition;
 
     public CustomIterator(int integers) {
         this.integers = new int[]{integers};

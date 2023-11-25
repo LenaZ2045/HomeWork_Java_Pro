@@ -8,19 +8,23 @@ public class ButtonPhone extends Phone {
         this.ownNumber = ownNumber;
     }
 
-    @Override
-    public void call(String numberCall) {
-        //First part phrase in this class
-        System.out.println("The phone " + getPhoneName() + " " + ownNumber);
-        //Call second part phrase from parent class
-        super.call(numberCall);
+    public String getOwnNumber() {
+        return ownNumber;
     }
 
     @Override
-    public void receiveCall(String numberReceiveCall) {
+    public void call(String phoneName) {
         //First part phrase in this class
-        System.out.println("The phone " + getPhoneName() + " " + ownNumber);
+        System.out.println("The phone " + phoneName + " " + getOwnNumber());
         //Call second part phrase from parent class
-        super.receiveCall(numberReceiveCall);
+        super.call(phoneName);
+    }
+
+    @Override
+    public void receiveCall(String phoneName) {
+        //First part phrase in this class
+        System.out.println("The phone " + phoneName + " " + getOwnNumber());
+        //Call second part phrase from parent class
+        super.receiveCall(phoneName);
     }
 }
