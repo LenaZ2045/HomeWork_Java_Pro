@@ -1,4 +1,4 @@
-package com.telran.org.homework10_10_2023;
+package com.telran.org.homework02_11_2023.task1;
 
 public enum Rank { // rank of each card - ранг каждой карты
     TWO, // write constants with capital letters - константы писать заглавными буквами

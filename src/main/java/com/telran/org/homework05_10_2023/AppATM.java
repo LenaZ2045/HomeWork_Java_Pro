@@ -32,7 +32,7 @@ public class AppATM {
 
         findEURConvert();
 
-//        System.out.println("Balance after transaction " + europeanATM.europeanTransactionBalance); // - dd not worked correctly
+//        System.out.println("Balance after transaction " + europeanATM.europeanTransactionBalance); // - did not worked correctly
         System.out.println();
         System.out.println("Will you please explain this homework in the beginning of our next class, please?");
     }
