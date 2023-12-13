@@ -52,12 +52,14 @@ public class MyArrayDequeue implements MyDequeue {
 
     @Override
     public Integer peekHead() {
-        return null;
+        ;
+        ;
+        return headIndex;
     }
 
     @Override
     public Integer peekTail() {
-        return null;
+        return tailIndex;
     }
 
     @Override
@@ -97,5 +99,11 @@ public class MyArrayDequeue implements MyDequeue {
 
     private int newCapacity(int needed, int jump) {
         return needed + jump;
+    }
+
+    public Integer[] getElements() {
+        MyArrayDequeue myArrayDequeue = new MyArrayDequeue();
+        myArrayDequeue.addToHead(00);
+        return elements;
     }
 }
