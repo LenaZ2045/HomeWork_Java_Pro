@@ -52,8 +52,6 @@ public class MyArrayDequeue implements MyDequeue {
 
     @Override
     public Integer peekHead() {
-        ;
-        ;
         return headIndex;
     }
 
@@ -73,7 +71,7 @@ public class MyArrayDequeue implements MyDequeue {
     }
 
     // bio directional and method to grow inert array
-    public String grow(int needed) {
+    public void grow(int needed) {
         //element * 1.5
         // overflow-conscious code
         final int oldCapacity = elements.length;
@@ -94,7 +92,6 @@ public class MyArrayDequeue implements MyDequeue {
             for (int i = headIndex, to = (headIndex += newSpace); i < to; i++)
                 es[i] = null;
         }
-        return null;
     }
 
     private int newCapacity(int needed, int jump) {
@@ -103,7 +100,7 @@ public class MyArrayDequeue implements MyDequeue {
 
     public Integer[] getElements() {
         MyArrayDequeue myArrayDequeue = new MyArrayDequeue();
-        myArrayDequeue.addToHead(00);
+        myArrayDequeue.addToHead(0);
         return elements;
     }
 }
