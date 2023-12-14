@@ -8,12 +8,12 @@ import java.util.regex.Pattern;
 public class RegExPhoneEmailPassword {
 
     public static void main(String[] args) {
-// Написать регулярные выражения для :
 
+// Написать регулярные выражения для :
 //       1- Check phone number 7 digit, 7777777 or 777-7777 or  777 7777 :
 //        range (0-9)
 
-        List phones = new ArrayList();
+        List<String> phones = new ArrayList<>();
         phones.add("777-7777");
         phones.add("777 7777");
         phones.add("7777777"); // this should be true
@@ -26,14 +26,15 @@ public class RegExPhoneEmailPassword {
         String regex1 = "^\\d{7}$|^\\d{3}-\\d{4}$|^\\d{3} \\d{4}$";
         Pattern pattern1 = Pattern.compile(regex1);
 
-        for(Object phone : phones){
-            Matcher matcher = pattern1.matcher((CharSequence) phone);
-            System.out.println(phone +" : "+ matcher.matches());
+        for (String phone : phones) {
+            Matcher matcher = pattern1.matcher(phone);
+            System.out.println(phone + " : " + matcher.matches());
         }
+        System.out.println();
 
 //       2- Check email
 
-        List emails = new ArrayList();
+        List<String> emails = new ArrayList<>();
         emails.add("alex@gmail.com");
         emails.add("vera@yahoo.com");
         emails.add("steve@comcast.net");
@@ -44,34 +45,33 @@ public class RegExPhoneEmailPassword {
         String regex2 = "^[A-Za-z0-9+_.-]+@(.+)$";
         Pattern pattern2 = Pattern.compile(regex2);
 
-        for(Object email : emails){
-            Matcher matcher = pattern2.matcher((CharSequence) email);
-            System.out.println(email +" : "+ matcher.matches());
+        for (String email : emails) {
+            Matcher matcher = pattern2.matcher(email);
+            System.out.println(email + " : " + matcher.matches());
         }
+        System.out.println();
 
 //       3- Check password  8 letters, digit,letters and something else
 
-        List passwords = new ArrayList();
+        List<String> passwords = new ArrayList<>();
         passwords.add("AbtIPdqK98chb$@="); // included 8 letters, (2) digits, (3) letter, and some (3) symbols = something else
 //Неправильный passwords:
         passwords.add("PP)11ww http: /");
         passwords.add("7773334");
-
 
         String regex = "(?=.*\\d)(?=.*[a-zA-Z])(?=.*[^\\W\\s]).{16,}";
         Pattern pattern = Pattern.compile(regex);
         String regex3 = "[A-Z][a-z][a-z][A-Z][A-Z][a-z][a-z][A-Z]\\d\\d[a-z][a-z][a-z]\\W\\W\\W";
         Pattern pattern3 = Pattern.compile(regex3);
 
-
-
-        for(Object password : passwords){
-            Matcher matcher = pattern.matcher((CharSequence) password);
-            System.out.println(password +" : "+ matcher.matches());
+        for (String password : passwords) {
+            Matcher matcher = pattern.matcher(password);
+            System.out.println(password + " : " + matcher.matches());
         }
-        for(Object password : passwords){
-            Matcher matcher = pattern3.matcher((CharSequence) password);
-            System.out.println(password +" : "+ matcher.matches());
+        System.out.println();
+        for (String password : passwords) {
+            Matcher matcher = pattern3.matcher(password);
+            System.out.println(password + " : " + matcher.matches());
         }
     }
 }
