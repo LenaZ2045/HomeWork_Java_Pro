@@ -14,5 +14,4 @@ public enum Rank { // rank of each card - ранг каждой карты
     QUEEN,
     KING,
     ACE;
-
 }
