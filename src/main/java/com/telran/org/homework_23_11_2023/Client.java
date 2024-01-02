@@ -1,10 +1,10 @@
 package com.telran.org.homework_23_11_2023;
 
 public class Client {
-    private int uniqueID;
-    private String name;
-    private int age;
-    private String phoneList;
+    private final int uniqueID;
+    private final String name;
+    private final int age;
+    private final String phoneList;
 
     public Client(int uniqueID, String name, int age, String phoneList) {
         this.uniqueID = uniqueID;

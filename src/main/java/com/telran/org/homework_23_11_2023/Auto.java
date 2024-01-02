@@ -2,11 +2,11 @@ package com.telran.org.homework_23_11_2023;
 
 public class Auto {
 
-private int vehicleNumber;
-private String vehicleColor;
-private String vehicleBrand;
-private int vehicleMileage;
-private int vehiclePrice;
+    private final int vehicleNumber;
+    private final String vehicleColor;
+    private final String vehicleBrand;
+    private final int vehicleMileage;
+    private final int vehiclePrice;
 
     public String getVehicleColor() {
         return vehicleColor;
@@ -41,7 +41,5 @@ private int vehiclePrice;
         this.vehicleBrand = vehicleBrand;
         this.vehicleMileage = vehicleMileage;
         this.vehiclePrice = vehiclePrice;
-
-
     }
 }
