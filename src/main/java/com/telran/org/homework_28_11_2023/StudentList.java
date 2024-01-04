@@ -10,6 +10,8 @@ import static com.telran.org.homework_28_11_2023.ClassType.*;
 public class StudentList {
 
     public static void main(String[] args) {
+
+// # 4 Task
         Student studentBE1 = new Student("Ryan", 4.5, true, ClassType.BA);
         Student studentBE2 = new Student("Tom", 4.0, true, ClassType.BA);
         Student studentBE3 = new Student("Steven", 3.5, false, ClassType.BA);
@@ -33,6 +35,7 @@ public class StudentList {
         Student studentQA5 = new Student("Samuel", 5.0, true, QA);
 
         List<Student> studentQualityAssuranceList = Arrays.asList(studentQA1, studentQA2, studentQA3, studentQA4, studentQA5);
+// #5 Task
         System.out.println();
         List<Student> studentList = new ArrayList<>();
         studentList.addAll(studentBackEndList);
@@ -52,6 +55,7 @@ public class StudentList {
                     }
                     System.out.println(student);
                 });
+// # 6 Task
         System.out.println();
         List<ProjectStudent> projectStudents = studentList.stream()
                 .filter(student -> student.getRate() > 4.5 && student.isFinished())
