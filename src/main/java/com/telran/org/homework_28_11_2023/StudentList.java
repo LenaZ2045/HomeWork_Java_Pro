@@ -35,7 +35,7 @@ public class StudentList {
         Student studentQA5 = new Student("Samuel", 5.0, true, QA);
 
         List<Student> studentQualityAssuranceList = Arrays.asList(studentQA1, studentQA2, studentQA3, studentQA4, studentQA5);
-// #5 Task
+// # 5 Task
         System.out.println();
         List<Student> studentList = new ArrayList<>();
         studentList.addAll(studentBackEndList);
