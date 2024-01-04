@@ -14,10 +14,6 @@ public class ProjectStudent {
         this.name = name;
     }
 
-    public double getRate() {
-        return rate;
-    }
-
     public void setRate(double rate) {
         this.rate = rate;
     }
