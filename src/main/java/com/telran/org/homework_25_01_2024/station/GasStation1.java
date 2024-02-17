@@ -1,7 +1,5 @@
 package com.telran.org.homework_25_01_2024.station;
 
-import com.telran.org.homework_25_01_2024.station.GasStation;
-
 import java.time.LocalTime;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
